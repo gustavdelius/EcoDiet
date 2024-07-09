@@ -1,5 +1,5 @@
 ---
-title: "How to deal with convergence problems"
+title: "3. How to deal with convergence problems"
 author: "Heloise Thero, Pierre-Yves Hernvann"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
