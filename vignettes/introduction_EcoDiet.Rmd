@@ -1,5 +1,5 @@
 ---
-title: "Introduction - How to use EcoDiet"
+title: "1. Introduction - How to use EcoDiet"
 author: "Heloise Thero, Pierre-Yves Hernvann"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
