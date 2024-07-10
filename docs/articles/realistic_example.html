@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">EcoDiet</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">2.0.1</span>
       </span>
     </div>
 
@@ -88,7 +88,7 @@
                         <h4 data-toc-skip class="author">Heloise Thero,
 Pierre-Yves Hernvann</h4>
             
-            <h4 data-toc-skip class="date">2024-07-09</h4>
+            <h4 data-toc-skip class="date">2024-07-10</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/pyhernvann/EcoDiet/blob/HEAD/vignettes/realistic_example.Rmd" class="external-link"><code>vignettes/realistic_example.Rmd</code></a></small>
       <div class="hidden name"><code>realistic_example.Rmd</code></div>
@@ -97,11 +97,11 @@ Pierre-Yves Hernvann</h4>
 
     
     
-<p>The introduction employed a simplistic expemple of food web to
+<p>The introduction employed a simplistic example of food web to
 familiarize the user with the basic commands and options of the EcoDiet
 package. Here we will use a more realistic example (although still
 artificial!) to run the different EcoDiet configurations, compare their
-results and hence higlight the complementarity in the different data
+results and hence highlight the complementarity in the different data
 used.</p>
 <p>The data corresponds to 10 trophic groups with stomach content data,
 and very distinct isotopic measures.</p>
@@ -461,7 +461,7 @@ iterations and adaptation steps:</p>
 <span><span class="co">#&gt; adaptation = 500 iterations (sufficient),</span></span>
 <span><span class="co">#&gt; burn-in = 500 iterations and thin rate = 1,</span></span>
 <span><span class="co">#&gt; yielding 1500 total samples from the joint posterior. </span></span>
-<span><span class="co">#&gt; MCMC ran for 0.225 minutes at time 2024-07-09 16:15:11.597794.</span></span>
+<span><span class="co">#&gt; MCMC ran for 0.235 minutes at time 2024-07-10 10:08:16.119673.</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt;              mean     sd    2.5%     50%   97.5% overlap0 f  Rhat n.eff</span></span>
 <span><span class="co">#&gt; eta[4,1]    0.648  0.084   0.481   0.648   0.800    FALSE 1 1.002   649</span></span>
@@ -827,7 +827,7 @@ input.</p></li>
 <span><span class="co">#&gt; adaptation = 500 iterations (sufficient),</span></span>
 <span><span class="co">#&gt; burn-in = 500 iterations and thin rate = 1,</span></span>
 <span><span class="co">#&gt; yielding 1500 total samples from the joint posterior. </span></span>
-<span><span class="co">#&gt; MCMC ran for 0.235 minutes at time 2024-07-09 16:15:29.070759.</span></span>
+<span><span class="co">#&gt; MCMC ran for 0.234 minutes at time 2024-07-10 10:08:34.460153.</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt;              mean     sd    2.5%     50%   97.5% overlap0 f  Rhat n.eff</span></span>
 <span><span class="co">#&gt; eta[4,1]    0.663  0.085   0.499   0.666   0.822    FALSE 1 1.002   834</span></span>
@@ -912,6 +912,13 @@ converged:</p>
 <p>You can save the figures as PNG using:</p>
 <div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/plot_results.html">plot_results</a></span><span class="op">(</span><span class="va">mcmc_output</span>, <span class="va">data</span>, pred <span class="op">=</span> <span class="st">"Pout"</span>, save <span class="op">=</span> <span class="cn">TRUE</span>, save_path <span class="op">=</span> <span class="st">"."</span><span class="op">)</span></span></code></pre></div>
+<p>Last, if you want to explore further in detail the a posteriori
+distribution of your parameters <span class="math inline">\(\Pi\)</span>
+and <span class="math inline">\(\eta\)</span>, you can run the following
+code line, which will store the values for all iterations into a data
+frame.</p>
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">reshape_mcmc</span><span class="op">(</span><span class="va">mcmc_output</span>, <span class="va">data</span><span class="op">)</span></span></code></pre></div>
 </div>
   </div>
 

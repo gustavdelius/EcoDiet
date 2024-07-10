@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">EcoDiet</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">2.0.1</span>
       </span>
     </div>
 
@@ -88,7 +88,7 @@
                         <h4 data-toc-skip class="author">Heloise Thero,
 Pierre-Yves Hernvann</h4>
             
-            <h4 data-toc-skip class="date">2024-07-09</h4>
+            <h4 data-toc-skip class="date">2024-07-10</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/pyhernvann/EcoDiet/blob/HEAD/vignettes/convergence_problems.Rmd" class="external-link"><code>vignettes/convergence_problems.Rmd</code></a></small>
       <div class="hidden name"><code>convergence_problems.Rmd</code></div>
@@ -211,7 +211,7 @@ interested.</p></li>
 package, all convergence diagnostics are based on Gelman-Rubin test. In
 the future, other diagnostics could be integrated. If you are used to
 work with models employing GIBS or other MCMC techniques, you could also
-directly use the jasgUI outputs to test other flavors of convergence
+directly use the jagsUI outputs to test other flavors of convergence
 diagnostic.]</p>
 <p>To summary, in terms of code, you can investigate the convergence of
 the model by alternatively running the following:</p>
@@ -242,9 +242,9 @@ number of iterations steps to run the model. Be aware that, depending on
 your data (e.g., food-web complexity, data informativeness), this can
 take <strong>hours or days</strong> to run. Using the model shortcuts
 provided in version 2.0.0, you could for example successively try to run
-youyr model in the “normal”, “long” then “very long” configurations.</p>
+your model in the “normal”, “long” then “very long” configurations.</p>
 <p>Increasing the number of iterations is a good solution in many cases
-and you should start from this. It would definitly look especially
+and you should start from this. It would definitely look especially
 pertinent when convergence diagnoses show that, additionally to a
 substantial number of variables with numerous variables have a Rhat &gt;
 1.1, a lot of them are between 1.05 and 1.01.</p>

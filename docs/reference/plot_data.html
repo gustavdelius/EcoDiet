@@ -26,7 +26,7 @@ B vs. C and A vs. C.'><!-- mathjax --><script src="https://cdnjs.cloudflare.com/
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">EcoDiet</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">2.0.1</span>
       </span>
     </div>
 
@@ -139,25 +139,14 @@ By default the figures are saved in a temporary directory.</p></dd>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="va">example_stomach_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/read.table.html" class="external-link">read.csv</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata"</span>, <span class="st">"example_stomach_data.csv"</span>,</span></span>
 <span class="r-in"><span>                                             package <span class="op">=</span> <span class="st">"EcoDiet"</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="fu">plot_data</span><span class="op">(</span>stomach_data <span class="op">=</span> <span class="va">example_stomach_data</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="plot_data-2.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu">plot_data</span><span class="op">(</span>biotracer_data <span class="op">=</span> <span class="va">example_biotracer_data</span>,</span></span>
 <span class="r-in"><span>          stomach_data <span class="op">=</span> <span class="va">example_stomach_data</span><span class="op">)</span></span></span>
+<span class="r-plt img"><img src="plot_data-2.png" alt="" width="700" height="433"></span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Use of `biotracer_data$group` is discouraged.</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Use `group` instead.</span>
 <span class="r-plt img"><img src="plot_data-3.png" alt="" width="700" height="433"></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Use of `biotracer_data$group` is discouraged.</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Use `group` instead.</span>
-<span class="r-plt img"><img src="plot_data-4.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span>          </span></span>
-<span class="r-in"><span><span class="fu">plot_data</span><span class="op">(</span>biotracer_data <span class="op">=</span> <span class="va">example_biotracer_data</span>,</span></span>
-<span class="r-in"><span>          stomach_data <span class="op">=</span> <span class="va">example_stomach_data</span>,</span></span>
-<span class="r-in"><span>          save <span class="op">=</span> <span class="cn">TRUE</span>, save_path <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/tempfile.html" class="external-link">tempdir</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="plot_data-5.png" alt="" width="700" height="433"></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Use of `biotracer_data$group` is discouraged.</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Use `group` instead.</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Use of `biotracer_data$group` is discouraged.</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> Use `group` instead.</span>
-<span class="r-plt img"><img src="plot_data-6.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span>     </span></span>
 </code></pre></div>
     </div>
